@@ -29,7 +29,7 @@ export default function App() {
       <div className="app">
         <Header />
         <Switch>
-          <Route path="/" exact>
+          <Route path="/flashcard" exact>
             <Card
               setArr={setArr}
               arr={arr}
