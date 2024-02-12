@@ -232,7 +232,7 @@ function Create({ textColor, setTextColor, bgColor, setBgColor, setArr, arr }) {
     const newArray = [...arr, newCard];
     setArr(newArray);
     history.push({
-      pathname: "/",
+      pathname: "/flashcard",
       state: { arr: newArray },
     });
   }
@@ -294,7 +294,7 @@ function Settings({
     setBgColor(defaultBgColor);
     setTextColor(defaultTextColor);
     history.push({
-      pathname: "/",
+      pathname: "/flashcard",
       state: { arr: arr, textColor: textColor, bgColor: bgColor },
     });
   }
@@ -325,7 +325,7 @@ function Settings({
       <Link
         className="btn btn-primary"
         to={{
-          pathname: "/",
+          pathname: "/flashcard",
           state: { arr: arr, bgColor: bgColor, textColor: textColor },
         }}
       >
